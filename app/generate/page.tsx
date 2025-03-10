@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
 import TypeText from "../Components/TypeText";
 import Footer from "../Components/Footer";
 
