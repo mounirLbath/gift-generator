@@ -49,7 +49,7 @@ export default function Home() {
             ]}
           />
           <button
-            className="text-9xl cursor-pointer"
+            className="text-6xl md:text-8xl cursor-pointer"
             onClick={() => {
               setIsClicked(true);
             }}
@@ -57,12 +57,12 @@ export default function Home() {
             🎁
           </button>
         </div>
-        <div className={isClicked ? "block" : "hidden"}>
+        <div className={(isClicked ? "block" : "hidden") + " m-[5%]"}>
           <ReactConfetti
             width={windowSize.width}
             height={windowSize.height}
           ></ReactConfetti>
-          <h1 className="text-center text-9xl">
+          <h1 className="text-center text-5xl md:text-7xl lg:text-8xl">
             <Suspense fallback={<div>Loading...</div>}>
               <Message />
             </Suspense>
