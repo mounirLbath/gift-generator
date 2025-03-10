@@ -13,9 +13,9 @@ const Footer = ({ isGift }: Props) => {
           Generate a gift
         </Link>
       ) : (
-        <Link className="text-blue-200 hover:text-blue-400" href="/">
+        <a className="text-blue-200 hover:text-blue-400" href="/">
           Default Birthday Gift
-        </Link>
+        </a>
       )}
     </footer>
   );
