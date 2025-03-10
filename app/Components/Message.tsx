@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
 // Decoder: Converts Base64 back to text

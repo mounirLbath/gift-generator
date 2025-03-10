@@ -1,7 +1,7 @@
 "use client";
 import Message from "./Components/Message";
 import TypeText from "./Components/TypeText";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import ReactConfetti from "react-confetti";
 import Footer from "./Components/Footer";
 
@@ -63,7 +63,9 @@ export default function Home() {
             height={windowSize.height}
           ></ReactConfetti>
           <h1 className="text-center text-9xl">
-            <Message />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Message />
+            </Suspense>
           </h1>
         </div>
       </div>

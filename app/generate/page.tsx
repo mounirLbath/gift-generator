@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import Form from "next/form";
+import React, { useState } from "react";
 import Link from "next/link";
 import TypeText from "../Components/TypeText";
 import Footer from "../Components/Footer";
@@ -9,8 +8,8 @@ function encodeToBase64(input: string): string {
   return Buffer.from(input).toString("base64");
 }
 
-const page = () => {
-  const [message, setMessage] = React.useState("");
+const Home = () => {
+  const [message, setMessage] = useState("");
   return (
     <div>
       <div className="w-screen h-screen flex flex-col justify-center items-center">
@@ -35,4 +34,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
