@@ -24,7 +24,7 @@ const Home = () => {
         />
         <Link
           className="my-10 text-blue-500 hover:text-blue-950"
-          href={"/?m=" + encodeToBase64(message)}
+          href={{ pathname: "/", query: { m: encodeToBase64(message) } }}
         >
           Send the URL of this page to your friend
         </Link>
